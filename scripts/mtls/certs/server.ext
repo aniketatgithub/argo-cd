@@ -1,0 +1,13 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = localhost
+DNS.2 = reposerver
+DNS.3 = argocd-repo-server
+DNS.4 = argocd-repo-server.argocd
+DNS.5 = argocd-repo-server.argocd.svc
+DNS.6 = argocd-repo-server.argocd.svc.cluster.local
